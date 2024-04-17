@@ -67,14 +67,16 @@ body {
   background-color: #2C2C2E;
 }
 
-.btn-secondary:hover,
-.btn-secondary:active,
-.btn-secondary:focus {
-  background-color: #363638;
+.btn-secondary:hover {
+  background-color: #4a4a4c;
 }
 
 .btn-success {
   background-color: #279243;
+} 
+
+.btn-success:hover {
+  background-color: #026d1e;
 } 
 
 .btn-outline-danger {
@@ -82,9 +84,7 @@ body {
   background-color: transparent;
 }
 
-.btn-outline-danger:hover,
-.btn-outline-danger:active,
-.btn-outline-danger:focus {
+.btn-outline-danger:hover {
   background-color: rgba(218, 76, 102, 0.3);
 }
 
