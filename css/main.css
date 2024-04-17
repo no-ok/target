@@ -12,7 +12,7 @@ html {
   width: 100%;
   overscroll-behavior: none;
   scroll-behavior: smooth;
-  scrollbar-color: #324050 #eaeff9;
+  scrollbar-color: #111 #2C2C2E;
   scrollbar-width: thin; 
 }
 
