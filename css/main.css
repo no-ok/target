@@ -233,6 +233,7 @@ body {
 .asimut-result,
 .angle-result {
   margin-right: 20px;
+  font-size: 24px;
 }
 
 .asimut-result b,
@@ -241,7 +242,7 @@ body {
 }
 
 .time, time {
-  font-size: 13px;
+  font-size: 14px;
   color: #999;
 }
 
