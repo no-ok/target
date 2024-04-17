@@ -68,17 +68,24 @@ body {
 }
 
 .btn-secondary:hover,
+.btn-secondary:active,
 .btn-secondary:focus {
   background-color: #363638;
 }
 
 .btn-success {
-  background-color: #15A139;
+  background-color: #279243;
 } 
 
 .btn-outline-danger {
   border: 1px solid #DA4C66;
   background-color: transparent;
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:active,
+.btn-outline-danger:focus {
+  background-color: rgba(218, 76, 102, 0.3);
 }
 
 
@@ -209,12 +216,28 @@ body {
   color: #2C2C2E;
 }
 
+.clear-history {
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  margin-left: 10px;
+  background-color: #3C3C41;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clear-history svg {
+  width: 26px;
+  height: 28px;
+}
+
 
 /* === calc result container === */
 
 .result-container {
   flex: 1; 
-  overflow-y: auto;
+  overflow-y: scroll;
   width: 100%;
   max-width: 700px;
   margin: 0 auto 10px;
@@ -233,7 +256,7 @@ body {
 .asimut-result,
 .angle-result {
   margin-right: 20px;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .asimut-result b,
@@ -247,7 +270,6 @@ body {
 }
 
 /* === numpad styles ===*/
-
 .input-container {
   display: flex;
   flex-wrap: wrap;
@@ -358,7 +380,15 @@ body {
 .numpad-container .btn-secondary,
 .numpad-container .btn-outline-danger {
   width: calc(25% - 12px);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+}
+
+@media(min-width: 375px) {
+  .asimut-result,
+  .angle-result {
+    margin-right: 20px;
+    font-size: 24px;
+  }
 }
 
 @media(min-width: 400px) {
