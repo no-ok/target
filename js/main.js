@@ -19,10 +19,22 @@ document.addEventListener("DOMContentLoaded", function() {
 	  document.body.classList.remove('locked');
 	});
 
-	// Перемикання між компасом то стрілками
-	document.querySelector('.unit-switch').addEventListener('click', function() {
-	  this.classList.toggle("active");
-	  document.querySelector('.input-container').classList.toggle("direction-show");
+
+	// Таби
+	const tabLinks = document.querySelectorAll('.tab-link');
+	tabLinks.forEach(tabLink => {
+	  tabLink.addEventListener('click', function() {
+	    const tabId = this.getAttribute('data-tab');
+
+	    document.querySelectorAll('.tab-link').forEach(link => link.classList.remove('current'));
+	    document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('current'));
+	    this.classList.add('current');
+
+	    const targetPane = document.getElementById(tabId);
+	    if (targetPane) {
+	      targetPane.classList.add('current');
+	    }
+	  });
 	});
 });
 
